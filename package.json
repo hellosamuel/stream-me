@@ -1,0 +1,16 @@
+{
+  "name": "stream-me",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  },
+  "scripts": {
+    "dev:app": "yarn workspace @stream-me/app dev"
+  }
+}
