@@ -11,6 +11,13 @@
     "lerna": "^3.22.1"
   },
   "scripts": {
-    "dev:app": "yarn workspace @stream-me/app dev"
+    "dev:api": "yarn workspace @stream-me/api dev",
+    "dev:app": "yarn workspace @stream-me/app dev",
+    "dev": "lerna run dev --scope={@stream-me/api,@stream-me/app}"
+  },
+  "prettier": {
+    "semi": false,
+    "printWidth": 120,
+    "arrowParens": "avoid"
   }
 }
