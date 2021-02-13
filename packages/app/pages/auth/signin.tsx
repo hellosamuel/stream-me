@@ -8,7 +8,7 @@ export default function SignIn() {
   const [password, setPassword] = useState("")
   const { error, signIn } = useAuth()
 
-  const onSubmit = async (event: FormEvent<HTMLFormElement>) => {
+  const onSubmit = async (event: FormEvent) => {
     event.preventDefault()
     signIn(email, password)
   }
