@@ -17,7 +17,8 @@ function createApolloClient() {
     }
   })
   const httpLink = new HttpLink({
-    uri: "http://localhost:8000/graphql",
+    // uri: "http://localhost:8000/graphql",
+    uri: "/graphql",
     credentials: "include",
   })
 

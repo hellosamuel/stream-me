@@ -6,7 +6,6 @@
   "dependencies": {
     "@apollo/client": "^3.3.9",
     "@material-ui/core": "^4.11.3",
-    "@stream-me/api": "*",
     "graphql": "^15.5.0",
     "next": "^10.0.6",
     "react": "^17.0.1",
@@ -14,7 +13,7 @@
   },
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "graphql-let && next build",
     "start": "next start"
   },
   "devDependencies": {
