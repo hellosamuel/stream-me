@@ -12,7 +12,7 @@
   },
   "scripts": {
     "dev": "yarn workspace @stream-me/api dev ",
-    "build": "yarn workspace @stream-me/app build",
+    "build": "lerna run build --scope={@stream-me/api,@stream-me/app}",
     "start": "yarn workspace @stream-me/api start"
   },
   "prettier": {

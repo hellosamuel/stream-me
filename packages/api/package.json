@@ -27,7 +27,8 @@
     "nodemon": "^2.0.7"
   },
   "scripts": {
-    "start": "ts-node --transpile-only server/index.ts",
-    "dev": "nodemon server/index.ts"
+    "dev": "nodemon server/index.ts",
+    "build": "ts-node --transpile-only schema/index.ts",
+    "start": "ts-node --transpile-only server/index.ts"
   }
 }

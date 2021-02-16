@@ -23,3 +23,10 @@ export default async function createSchema(): Promise<GraphQLSchema> {
   })
   return schema
 }
+
+if (require.main === module) {
+  createSchema().catch(e => {
+    console.error(e)
+    process.exit(1)
+  })
+}
