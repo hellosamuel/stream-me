@@ -8,12 +8,14 @@
     "packages/*"
   ],
   "devDependencies": {
-    "lerna": "^3.22.1"
+    "lerna": "^3.22.1",
+    "rimraf": "^3.0.2"
   },
   "scripts": {
     "dev": "yarn workspace @stream-me/api dev ",
     "build": "lerna run build --scope={@stream-me/api,@stream-me/app}",
-    "start": "yarn workspace @stream-me/api start"
+    "start": "yarn workspace @stream-me/api start",
+    "clean": "lerna clean -y && rimraf node_modules"
   },
   "prettier": {
     "semi": false,
